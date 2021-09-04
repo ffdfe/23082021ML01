@@ -75,6 +75,20 @@ False
 {'Black', 'White'}
 >>> # question 8
 
+s='abcdefghijklmnopqrstuvwxyz'
+p=True
+query=input()
+for i in s:
+    if i not in query:
+        p=False
+        break
+if p==False:
+    print('pangram')
+    
+         
+else:
+    print('not pangram')
+
 
 
 >>> #question 9
@@ -94,7 +108,13 @@ Enter a number:4
 >>> print(num)
 492
 >>> # question 10
-
+v=input()
+x,y=v.split('#')
+x.split()
+x=[int(i) for i in x.split()]
+y=[int(i) for i in y.split()]
+print(x)
+print(y)
 
 >>> # question 11
 >>> phrase = input("Input words: ")
@@ -103,6 +123,9 @@ Input words: without,hello,bag,world
 >>> phrase_list.sort()
 >>> print((', ').join(phrase_list))
 bag, hello, without, world
+
+
+
 >>> # question 13
 
 >>> s = input("Input a string")
